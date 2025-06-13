@@ -31,7 +31,7 @@
       const resultDiv = document.getElementById("result");
 
       try {
-        const response = await fetch("{% url 'disease' %}", {
+        const response = await fetch("{% url 'disease-prediction' %}", {
           method: "POST",
           body: formData,
           headers: {

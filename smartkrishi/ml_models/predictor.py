@@ -1,10 +1,9 @@
-# ml_models/predictor.py
 
 import json
 import numpy as np
 from PIL import Image
 import tensorflow as tf
-from tensorflow.keras.utils import custom_object_scope
+from keras.utils import custom_object_scope
 from tensorflow.keras.layers import Layer
 
 # --- Dummy Layer Class (used in your model) ---
@@ -32,24 +31,29 @@ with custom_object_scope(custom_objects):
 
 # --- Predict function ---
 def predict_image(image: Image.Image):
-    image = image.resize((224, 224))
-    img_array = np.array(image) / 255.0
-    img_array = img_array.reshape(1, 224, 224, 3)
+    try:
+        image = image.resize((224, 224))
+        img_array = np.array(image) / 255.0
+        img_array = img_array.reshape(1, 224, 224, 3)
 
-    prediction = model.predict(img_array)
-    predicted_index = np.argmax(prediction)
-    confidence = float(np.max(prediction) * 100)
-    result = class_names[predicted_index]
+        prediction = model.predict(img_array)
+        predicted_index = np.argmax(prediction)
+        confidence = float(np.max(prediction) * 100)
+        result = class_names[predicted_index]
 
-    # Get treatment
-    treatment = treatment_data.get(result, {
-        "chemical": "No recommendation available.",
-        "biological": "No recommendation available."
-    })
+        treatment = treatment_data.get(result, {
+            "chemical": "No recommendation available.",
+            "biological": "No recommendation available."
+        })
 
-    return {
-        "disease": result,
-        "confidence": f"{confidence:.2f}%",
-        "chemical_treatment": treatment["chemical"],
-        "biological_treatment": treatment["biological"]
-    }
+        return {
+            "disease": result,
+            "confidence": f"{confidence:.2f}%",
+            "chemical_treatment": treatment["chemical"],
+            "biological_treatment": treatment["biological"]
+        }
+
+    except Exception as e:
+        return {
+            "error": f"Prediction failed: {str(e)}"
+        }
