@@ -1,0 +1,306 @@
+{
+    "Apple___Apple_scab": {
+        "chemical": "Spray Captan 50% WP or Mancozeb 75% WP @ 2 g/litre.",
+        "biological": "Apply Bacillus subtilis and remove fallen infected leaves."
+    },
+    "Apple___Black_rot": {
+        "chemical": "Use Thiophanate-methyl or Carbendazim during early season.",
+        "biological": "Prune infected limbs; apply Trichoderma in the soil."
+    },
+    "Apple___Cedar_apple_rust": {
+        "chemical": "Apply Myclobutanil or Sulfur sprays during early leaf stage.",
+        "biological": "Remove alternate host junipers to break the cycle."
+    },
+    "Apple___healthy": {
+        "chemical": "To be updated: Recommended chemical treatment for this disease.",
+        "biological": "To be updated: Recommended biological treatment or bio-fungicide."
+    },
+    "Blueberry___healthy": {
+        "chemical": "To be updated: Recommended chemical treatment for this disease.",
+        "biological": "To be updated: Recommended biological treatment or bio-fungicide."
+    },
+    "Cherry_(including_sour)___Powdery_mildew": {
+        "chemical": "To be updated: Recommended chemical treatment for this disease.",
+        "biological": "To be updated: Recommended biological treatment or bio-fungicide."
+    },
+    "Cherry_(including_sour)___healthy": {
+        "chemical": "To be updated: Recommended chemical treatment for this disease.",
+        "biological": "To be updated: Recommended biological treatment or bio-fungicide."
+    },
+    "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": {
+        "chemical": "To be updated: Recommended chemical treatment for this disease.",
+        "biological": "To be updated: Recommended biological treatment or bio-fungicide."
+    },
+    "Corn_(maize)___Common_rust_": {
+        "chemical": "To be updated: Recommended chemical treatment for this disease.",
+        "biological": "To be updated: Recommended biological treatment or bio-fungicide."
+    },
+    "Corn_(maize)___Northern_Leaf_Blight": {
+        "chemical": "To be updated: Recommended chemical treatment for this disease.",
+        "biological": "To be updated: Recommended biological treatment or bio-fungicide."
+    },
+    "Corn_(maize)___healthy": {
+        "chemical": "To be updated: Recommended chemical treatment for this disease.",
+        "biological": "To be updated: Recommended biological treatment or bio-fungicide."
+    },
+    "Grape___Black_rot": {
+        "chemical": "Spray Mancozeb or Ziram at 10-day intervals.",
+        "biological": "Use Bacillus subtilis and remove mummified fruits."
+    },
+    "Grape___Esca_(Black_Measles)": {
+        "chemical": "Apply systemic fungicide like Tebuconazole post-pruning.",
+        "biological": "Promote airflow; use Trichoderma in pruning wounds."
+    },
+    "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": {
+        "chemical": "Spray Chlorothalonil or Copper oxychloride.",
+        "biological": "Apply neem oil or Bacillus-based biocontrols."
+    },
+    "Grape___healthy": {
+        "chemical": "To be updated: Recommended chemical treatment for this disease.",
+        "biological": "To be updated: Recommended biological treatment or bio-fungicide."
+    },
+    "Guava_anthracnose": {
+        "chemical": "To be updated: Recommended chemical treatment for this disease.",
+        "biological": "To be updated: Recommended biological treatment or bio-fungicide."
+    },
+    "Guava_healthy": {
+        "chemical": "To be updated: Recommended chemical treatment for this disease.",
+        "biological": "To be updated: Recommended biological treatment or bio-fungicide."
+    },
+    "Guava_insect_bite": {
+        "chemical": "To be updated: Recommended chemical treatment for this disease.",
+        "biological": "To be updated: Recommended biological treatment or bio-fungicide."
+    },
+    "Guava_multiple": {
+        "chemical": "To be updated: Recommended chemical treatment for this disease.",
+        "biological": "To be updated: Recommended biological treatment or bio-fungicide."
+    },
+    "Guava_scorch": {
+        "chemical": "To be updated: Recommended chemical treatment for this disease.",
+        "biological": "To be updated: Recommended biological treatment or bio-fungicide."
+    },
+    "Guava_yld": {
+        "chemical": "To be updated: Recommended chemical treatment for this disease.",
+        "biological": "To be updated: Recommended biological treatment or bio-fungicide."
+    },
+    "Lemon_Anthracnose": {
+        "chemical": "To be updated: Recommended chemical treatment for this disease.",
+        "biological": "To be updated: Recommended biological treatment or bio-fungicide."
+    },
+    "Lemon_Bacterial Blight": {
+        "chemical": "To be updated: Recommended chemical treatment for this disease.",
+        "biological": "To be updated: Recommended biological treatment or bio-fungicide."
+    },
+    "Lemon_Citrus Canker": {
+        "chemical": "Spray Streptomycin sulphate + Copper oxychloride every 10\u201315 days.",
+        "biological": "Apply Pseudomonas fluorescens and prune infected branches."
+    },
+    "Lemon_Curl Virus": {
+        "chemical": "To be updated: Recommended chemical treatment for this disease.",
+        "biological": "To be updated: Recommended biological treatment or bio-fungicide."
+    },
+    "Lemon_Deficiency Leaf": {
+        "chemical": "To be updated: Recommended chemical treatment for this disease.",
+        "biological": "To be updated: Recommended biological treatment or bio-fungicide."
+    },
+    "Lemon_Dry Leaf": {
+        "chemical": "To be updated: Recommended chemical treatment for this disease.",
+        "biological": "To be updated: Recommended biological treatment or bio-fungicide."
+    },
+    "Lemon_Healthy Leaf": {
+        "chemical": "To be updated: Recommended chemical treatment for this disease.",
+        "biological": "To be updated: Recommended biological treatment or bio-fungicide."
+    },
+    "Lemon_Sooty Mould": {
+        "chemical": "Use systemic insecticides to control sap-sucking insects.",
+        "biological": "Spray neem oil or Verticillium lecanii to control aphids/whiteflies."
+    },
+    "Lemon_Spider Mites": {
+        "chemical": "To be updated: Recommended chemical treatment for this disease.",
+        "biological": "To be updated: Recommended biological treatment or bio-fungicide."
+    },
+    "Mango__Anthracnose": {
+        "chemical": "Spray Carbendazim or Thiophanate-methyl before flowering.",
+        "biological": "Apply Trichoderma viride to infected twigs and panicles."
+    },
+    "Mango__Bacterial Canker": {
+        "chemical": "To be updated: Recommended chemical treatment for this disease.",
+        "biological": "To be updated: Recommended biological treatment or bio-fungicide."
+    },
+    "Mango__Cutting Weevil": {
+        "chemical": "To be updated: Recommended chemical treatment for this disease.",
+        "biological": "To be updated: Recommended biological treatment or bio-fungicide."
+    },
+    "Mango__Die Back": {
+        "chemical": "To be updated: Recommended chemical treatment for this disease.",
+        "biological": "To be updated: Recommended biological treatment or bio-fungicide."
+    },
+    "Mango__Gall Midge": {
+        "chemical": "To be updated: Recommended chemical treatment for this disease.",
+        "biological": "To be updated: Recommended biological treatment or bio-fungicide."
+    },
+    "Mango__Healthy": {
+        "chemical": "To be updated: Recommended chemical treatment for this disease.",
+        "biological": "To be updated: Recommended biological treatment or bio-fungicide."
+    },
+    "Mango__Powdery Mildew": {
+        "chemical": "Dust Sulfur or spray Hexaconazole during early stages.",
+        "biological": "Use neem oil or Bacillus subtilis during flowering."
+    },
+    "Mango__Sooty Mould": {
+        "chemical": "To be updated: Recommended chemical treatment for this disease.",
+        "biological": "To be updated: Recommended biological treatment or bio-fungicide."
+    },
+    "Orange___Haunglongbing_(Citrus_greening)": {
+        "chemical": "To be updated: Recommended chemical treatment for this disease.",
+        "biological": "To be updated: Recommended biological treatment or bio-fungicide."
+    },
+    "Peach___Bacterial_spot": {
+        "chemical": "To be updated: Recommended chemical treatment for this disease.",
+        "biological": "To be updated: Recommended biological treatment or bio-fungicide."
+    },
+    "Peach___healthy": {
+        "chemical": "To be updated: Recommended chemical treatment for this disease.",
+        "biological": "To be updated: Recommended biological treatment or bio-fungicide."
+    },
+    "Pepper,_bell___Bacterial_spot": {
+        "chemical": "To be updated: Recommended chemical treatment for this disease.",
+        "biological": "To be updated: Recommended biological treatment or bio-fungicide."
+    },
+    "Pepper,_bell___healthy": {
+        "chemical": "To be updated: Recommended chemical treatment for this disease.",
+        "biological": "To be updated: Recommended biological treatment or bio-fungicide."
+    },
+    "Potato___Early_blight": {
+        "chemical": "Spray Mancozeb 75% WP @ 2.5 g/litre at 10\u201314 day intervals.",
+        "biological": "Use Trichoderma viride and compost tea as foliar spray."
+    },
+    "Potato___Late_blight": {
+        "chemical": "Use Mancozeb 75% WP or Metalaxyl + Mancozeb every 7 days.",
+        "biological": "Spray Trichoderma viride or compost extracts weekly."
+    },
+    "Potato___healthy": {
+        "chemical": "To be updated: Recommended chemical treatment for this disease.",
+        "biological": "To be updated: Recommended biological treatment or bio-fungicide."
+    },
+    "Pumpkin_Bacterial Leaf Spot": {
+        "chemical": "To be updated: Recommended chemical treatment for this disease.",
+        "biological": "To be updated: Recommended biological treatment or bio-fungicide."
+    },
+    "Pumpkin_Downy Mildew": {
+        "chemical": "To be updated: Recommended chemical treatment for this disease.",
+        "biological": "To be updated: Recommended biological treatment or bio-fungicide."
+    },
+    "Pumpkin_Healthy Leaf": {
+        "chemical": "To be updated: Recommended chemical treatment for this disease.",
+        "biological": "To be updated: Recommended biological treatment or bio-fungicide."
+    },
+    "Pumpkin_Mosaic Disease": {
+        "chemical": "To be updated: Recommended chemical treatment for this disease.",
+        "biological": "To be updated: Recommended biological treatment or bio-fungicide."
+    },
+    "Pumpkin_Powdery_Mildew": {
+        "chemical": "To be updated: Recommended chemical treatment for this disease.",
+        "biological": "To be updated: Recommended biological treatment or bio-fungicide."
+    },
+    "Raspberry___healthy": {
+        "chemical": "To be updated: Recommended chemical treatment for this disease.",
+        "biological": "To be updated: Recommended biological treatment or bio-fungicide."
+    },
+    "Rice___Brown_Spot": {
+        "chemical": "Spray Propiconazole @ 1 ml/litre or Mancozeb 75% WP @ 2.5 g/litre.",
+        "biological": "Apply Pseudomonas fluorescens @ 10 ml/litre at booting stage."
+    },
+    "Rice___Healthy": {
+        "chemical": "To be updated: Recommended chemical treatment for this disease.",
+        "biological": "To be updated: Recommended biological treatment or bio-fungicide."
+    },
+    "Rice___Leaf_Blast": {
+        "chemical": "Use Tricyclazole 75% WP @ 0.6 g/litre at initial infection.",
+        "biological": "Spray Pseudomonas fluorescens and maintain field hygiene."
+    },
+    "Rice___Neck_Blast": {
+        "chemical": "Apply Carbendazim 50% WP @ 1 g/litre at panicle emergence.",
+        "biological": "Use mixed formulation of Pseudomonas fluorescens and Bacillus subtilis."
+    },
+    "Soybean___healthy": {
+        "chemical": "To be updated: Recommended chemical treatment for this disease.",
+        "biological": "To be updated: Recommended biological treatment or bio-fungicide."
+    },
+    "Squash___Powdery_mildew": {
+        "chemical": "To be updated: Recommended chemical treatment for this disease.",
+        "biological": "To be updated: Recommended biological treatment or bio-fungicide."
+    },
+    "Strawberry___Leaf_scorch": {
+        "chemical": "To be updated: Recommended chemical treatment for this disease.",
+        "biological": "To be updated: Recommended biological treatment or bio-fungicide."
+    },
+    "Strawberry___healthy": {
+        "chemical": "To be updated: Recommended chemical treatment for this disease.",
+        "biological": "To be updated: Recommended biological treatment or bio-fungicide."
+    },
+    "Tomato___Bacterial_spot": {
+        "chemical": "Apply Copper oxychloride 50% WP @ 3 g/litre of water every 7\u201310 days.",
+        "biological": "Use Pseudomonas fluorescens as seed and foliar spray to suppress infection."
+    },
+    "Tomato___Early_blight": {
+        "chemical": "Spray Mancozeb 75% WP @ 2 g/litre or Chlorothalonil 75% WP.",
+        "biological": "Apply Trichoderma viride as soil amendment and foliar spray."
+    },
+    "Tomato___Late_blight": {
+        "chemical": "Apply Metalaxyl + Mancozeb mixture @ 2.5 g/litre at 7-day intervals.",
+        "biological": "Use Bacillus subtilis or Trichoderma harzianum for biocontrol."
+    },
+    "Tomato___Leaf_Mold": {
+        "chemical": "Use Azoxystrobin or Copper fungicides at early stages of infection.",
+        "biological": "Maintain good airflow; use Neem oil 3% as foliar spray."
+    },
+    "Tomato___Septoria_leaf_spot": {
+        "chemical": "Apply Chlorothalonil 75% WP or Mancozeb at 10-day intervals.",
+        "biological": "Use compost teas and Bacillus-based biofungicides."
+    },
+    "Tomato___Spider_mites Two-spotted_spider_mite": {
+        "chemical": "Spray Abamectin 1.8% EC or Fenpyroximate.",
+        "biological": "Use neem oil or predatory mites like Phytoseiulus persimilis."
+    },
+    "Tomato___Target_Spot": {
+        "chemical": "Apply Azoxystrobin or Difenoconazole at early stage.",
+        "biological": "Use compost tea sprays and ensure proper spacing for airflow."
+    },
+    "Tomato___Tomato_Yellow_Leaf_Curl_Virus": {
+        "chemical": "Spray Imidacloprid to control whiteflies (vector).",
+        "biological": "Use yellow sticky traps and neem oil to reduce vector population."
+    },
+    "Tomato___Tomato_mosaic_virus": {
+        "chemical": "No direct chemical; remove infected plants and disinfect tools.",
+        "biological": "Use resistant varieties; apply seaweed extracts to boost immunity."
+    },
+    "Tomato___healthy": {
+        "chemical": "To be updated: Recommended chemical treatment for this disease.",
+        "biological": "To be updated: Recommended biological treatment or bio-fungicide."
+    },
+    "Wheat___Brown_Rust": {
+        "chemical": "Apply Mancozeb or Tebuconazole at early symptom stage.",
+        "biological": "Remove volunteer wheat plants; use Trichoderma bioagents."
+    },
+    "Wheat___Healthy": {
+        "chemical": "To be updated: Recommended chemical treatment for this disease.",
+        "biological": "To be updated: Recommended biological treatment or bio-fungicide."
+    },
+    "Wheat___Yellow_Rust": {
+        "chemical": "Spray Propiconazole 25% EC @ 1 ml/litre of water.",
+        "biological": "Use Neem-based fungicides and resistant cultivars."
+    },
+    "sugarcane__Bacterial Blight": {
+        "chemical": "To be updated: Recommended chemical treatment for this disease.",
+        "biological": "To be updated: Recommended biological treatment or bio-fungicide."
+    },
+    "sugarcane__Healthy": {
+        "chemical": "To be updated: Recommended chemical treatment for this disease.",
+        "biological": "To be updated: Recommended biological treatment or bio-fungicide."
+    },
+    "sugarcane__Red Rot": {
+        "chemical": "To be updated: Recommended chemical treatment for this disease.",
+        "biological": "To be updated: Recommended biological treatment or bio-fungicide."
+    }
+}

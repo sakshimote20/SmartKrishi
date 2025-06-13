@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{% block title %}SmartKrishi{% endblock %}</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>🌿 SmartKrishi</header>
+
+  <!-- Navigation Bar with dynamic URLs -->
+  <nav>
+    <a href="{% url 'home' %}">Home</a>
+    <a href="{% url 'disease' %}">Disease Prediction</a>
+  </nav>
+
+  <!-- Page Content Block -->
+  <div class="container">
+    {% block content %}
+    {% endblock %}
+  </div>
+
+</body>
+</html>

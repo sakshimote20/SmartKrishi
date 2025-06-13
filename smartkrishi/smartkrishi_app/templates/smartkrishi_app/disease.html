@@ -1,0 +1,59 @@
+{% extends 'smartkrishi_app/base.html' %}
+
+{% block title %}Disease Prediction{% endblock %}
+
+{% block content %}
+  <h2>Disease Prediction</h2>
+
+  <form id="predict-form" enctype="multipart/form-data" method="POST">
+    {% csrf_token %}
+    <input type="file" id="imageInput" name="image" required />
+    <br><br>
+    <button type="submit">Predict Disease</button>
+  </form>
+
+  <div id="result"></div>
+
+  <script>
+    document.getElementById("predict-form").addEventListener("submit", async function (e) {
+      e.preventDefault();
+
+      const input = document.getElementById("imageInput");
+      const file = input.files[0];
+      if (!file) {
+        alert("Please select an image!");
+        return;
+      }
+
+      const formData = new FormData();
+      formData.append("image", file);
+
+      const resultDiv = document.getElementById("result");
+
+      try {
+        const response = await fetch("{% url 'disease' %}", {
+          method: "POST",
+          body: formData,
+          headers: {
+            "X-CSRFToken": "{{ csrf_token }}"
+          }
+        });
+
+        const data = await response.json();
+
+        if (data.error) {
+          resultDiv.innerHTML = `<p style="color:red;">${data.error}</p>`;
+        } else {
+          resultDiv.innerHTML = `
+            <p><strong>Predicted Disease:</strong> ${data.disease}</p>
+            <p><strong>Confidence:</strong> ${data.confidence}</p>
+            <p><strong>Chemical Treatment:</strong> ${data.chemical_treatment}</p>
+            <p><strong>Biological Treatment:</strong> ${data.biological_treatment}</p>
+          `;
+        }
+      } catch (err) {
+        resultDiv.innerHTML = `<p style="color:red;">Error: ${err}</p>`;
+      }
+    });
+  </script>
+{% endblock %}
