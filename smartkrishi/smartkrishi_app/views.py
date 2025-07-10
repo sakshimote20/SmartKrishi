@@ -27,5 +27,9 @@ class DiseasePredictionAPI(APIView):
 
 def home(request):
     return render(request, 'smartkrishi_app/home.html')
+
 def disease_prediction(request):
     return render(request, 'smartkrishi_app/disease.html')
+
+def weather_view(request):
+    return render(request, 'smartkrishi_app/weather.html')
