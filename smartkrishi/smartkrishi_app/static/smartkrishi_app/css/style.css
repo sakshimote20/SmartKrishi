@@ -10,11 +10,12 @@
   width: fit-content;
   text-align: center;
 }
-# Home Page Styles
+/* Home Page Styles */
 .home-main {
-  max-width: 1100px;
+  max-width: 98vw;
+  width: 98vw;
   margin: 0 auto;
-  padding: 30px 20px;
+  padding: 30px 1vw;
   text-align: center;
 }
 
@@ -118,6 +119,16 @@ nav a {
   padding: 30px;
   border-radius: 8px;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+/* Make .container full width for home page */
+.home-main.container {
+  max-width: 98vw;
+  width: 98vw;
+  margin: 0 auto;
+  background: none;
+  box-shadow: none;
+  padding: 30px 1vw;
 }
 #result {
   margin-top: 20px;
