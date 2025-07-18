@@ -1,12 +1,59 @@
 {% extends "smartkrishi_app/base.html" %}
 
+{% block title %}SmartKrishi | Home{% endblock %}
+
 {% block content %}
 <main class="home-main">
-    <h1>Welcome to SmartKrishi</h1>
+    <h1>🌾 Welcome to SmartKrishi</h1>
     <p>
-        Empowering farmers with smart solutions for modern agriculture.<br>
-        Explore crop recommendations, weather updates, and more.
+        Empowering farmers with smart, AI-powered agricultural solutions.<br>
+        Explore various features to support farming activities.
     </p>
-    <a href="#" class="btn">Get Started</a>
+
+    <!-- Feature Cards Section -->
+    <section class="features-grid">
+        <!-- Crop & Fertilizer Recommendation -->
+        <div class="feature-card">
+            <h2>🌱 Crop & Fertilizer Recommendation</h2>
+            <p>Get suggestions based on soil health, weather, and season.</p>
+            <a href="{% url 'disease' %}" class="btn">Try Now</a>
+        </div>
+
+        <!-- Disease Prediction -->
+        <div class="feature-card">
+            <h2>🦠 Crop Disease Prediction</h2>
+            <p>Use ML to detect diseases and protect your crops early.</p>
+            <a href="{% url 'disease' %}" class="btn">Predict Disease</a>
+        </div>
+
+        <!-- Weather Forecast -->
+        <div class="feature-card">
+            <h2>☁️ Weather Forecast</h2>
+            <p>Check upcoming weather to plan your farming activities.</p>
+            <a href="{% url 'weather' %}" class="btn">Check Weather</a>
+        </div>
+
+        <!-- Call Crop Doctor -->
+        <div class="feature-card">
+            <h2>👨‍⚕️ Call a Crop Doctor</h2>
+            <p>Talk to expert crop doctors via video call for guidance.</p>
+            <a href="{% url 'call-doctor' %}" class="btn">Call Now</a>
+        </div>
+
+        <!-- Doctor Registration -->
+        <div class="feature-card">
+            <h2>📝 Doctor Registration</h2>
+            <p>Are you a crop doctor? Register and help farmers.</p>
+            <a href="{% url 'doctor-register' %}" class="btn">Register</a>
+        </div>
+
+        <!-- Farmer-Worker Forum -->
+        <div class="feature-card">
+            <h2>🤝 Farmer & Worker Forum</h2>
+            <p>Post or find work in your village farming community.</p>
+            <a href="{% url 'create-work-post' %}" class="btn">Post Work</a>
+            <a href="{% url 'view-work-posts' %}" class="btn">View Posts</a>
+        </div>
+    </section>
 </main>
 {% endblock %}
