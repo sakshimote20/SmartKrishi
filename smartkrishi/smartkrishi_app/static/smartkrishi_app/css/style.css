@@ -1,19 +1,109 @@
+.home-main h1 {
+  display: block;
+  background: linear-gradient(90deg, #e0ffe7 0%, #b2f7ef 100%);
+  color: #03590a;
+  padding: 16px 36px;
+  border-radius: 32px;
+  box-shadow: 0 2px 12px rgba(67,233,123,0.10);
+  font-size: 2.3em;
+  margin: 0 auto 18px auto;
+  width: fit-content;
+  text-align: center;
+}
+# Home Page Styles
+.home-main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.feature-card {
+  background: linear-gradient(135deg, #e0ffe7 0%, #b2f7ef 100%);
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(76,175,80,0.10);
+  padding: 32px 20px 28px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.feature-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 24px rgba(76,175,80,0.18);
+}
+.feature-card h2 {
+  margin-bottom: 12px;
+  color: #388e3c;
+  font-size: 1.3em;
+}
+.feature-card p {
+  color: #444;
+  margin-bottom: 18px;
+}
+.btn {
+  display: inline-block;
+  background: linear-gradient(90deg, #43e97b 0%, #38f9d7 100%);
+  color: #03590a;
+  font-weight: bold;
+  padding: 10px 22px;
+  border-radius: 25px;
+  text-decoration: none;
+  margin: 4px 6px;
+  box-shadow: 0 2px 8px rgba(67,233,123,0.10);
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+.btn:hover {
+  background: linear-gradient(90deg, #38f9d7 0%, #43e97b 100%);
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(67,233,123,0.18);
+}
 body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
   background: #f7f7f7;
+  padding-top: 160px; /* header + nav height */
 }
 header {
   background-color: #4CAF50;
-  color: white;
-  padding: 15px;
+  color: #f8f9fa !important;
+  text-shadow: 3px 3px 10px rgba(0,0,0,0.4), 0 1px 0 #fff;
+  padding: 40px 15px;
+  min-height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  font-size: 24px;
+  font-size: 40px;
+  font-weight: bold;
+  background-image: url('/static/smartkrishi_app/css/smartkrishi.avif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 1000;
+  box-sizing: border-box;
 }
 nav {
   background-color: #3e8e41;
   padding: 10px;
   text-align: center;
+  position: fixed;
+  top: 130px;
+  left: 0;
+  width: 100vw;
+  z-index: 999;
+  box-sizing: border-box;
 }
 nav a {
   color: white;
