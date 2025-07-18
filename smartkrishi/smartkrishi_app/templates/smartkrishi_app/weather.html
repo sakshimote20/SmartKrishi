@@ -3,7 +3,7 @@
 {% block title %}Weather Forecast{% endblock %}
 
 {% block content %}
-  <h2>🌤️ Weather Forecast</h2>
+  <h2>Weather Forecast</h2>
   
   <input type="text" id="cityInput" placeholder="Enter city name" />
   <button onclick="getWeather()">Get Weather</button>
@@ -20,7 +20,7 @@
         return;
       }
 
-      const apiKey = "0a11156568c74809f00e5fd35c3ce44e";
+      const apiKey = "0a11156568c74809f00e5fd35c3ce44e";  // your actual API key
       const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
       try {
@@ -32,12 +32,39 @@
           return;
         }
 
+        let temp = data.main.temp;
+        let humidity = data.main.humidity;
+        let condition = data.weather[0].main;
+        let wind = data.wind.speed;
+
+        let advice = "<strong>Farmer Advice:</strong><br>";
+
+        if (condition.toLowerCase().includes("rain")) {
+          advice += "- Rain expected: avoid spraying pesticides today.<br>";
+        }
+        if (humidity > 80) {
+          advice += "- High humidity: risk of fungal infections. Check crops for mildew.<br>";
+        }
+        if (temp < 18) {
+          advice += "- Low temperature: avoid sowing temperature-sensitive crops.<br>";
+        }
+        if (wind > 30) {
+          advice += "- Strong winds: secure polyhouse plastic covers and nets.<br>";
+        }
+        if (advice === "<strong>Farmer Advice:</strong><br>") {
+          advice += "- Conditions look normal. No immediate action required.";
+        }
+
         resultDiv.innerHTML = `
           <p><strong>City:</strong> ${data.name}</p>
-          <p><strong>Temperature:</strong> ${data.main.temp} °C</p>
-          <p><strong>Humidity:</strong> ${data.main.humidity} %</p>
+          <p><strong>Temperature:</strong> ${temp} °C</p>
+          <p><strong>Humidity:</strong> ${humidity} %</p>
           <p><strong>Condition:</strong> ${data.weather[0].description}</p>
-          <p><strong>Wind Speed:</strong> ${data.wind.speed} m/s</p>
+          <p><strong>Wind Speed:</strong> ${wind} m/s</p>
+          <br>
+          <div style="background:#f4f4f4; padding:10px; border-left: 4px solid green;">
+            ${advice}
+          </div>
         `;
       } catch (err) {
         resultDiv.innerHTML = `<p style="color:red;">Could not fetch weather data.</p>`;

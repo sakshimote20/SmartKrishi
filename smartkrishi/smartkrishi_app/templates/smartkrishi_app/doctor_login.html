@@ -1,0 +1,12 @@
+{% extends "smartkrishi_app/base.html" %}
+
+{% block content %}
+<main class="form-page">
+    <h2>🔐 Doctor Login</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn">Login</button>
+    </form>
+</main>
+{% endblock %}

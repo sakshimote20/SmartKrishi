@@ -1,0 +1,16 @@
+{% extends "smartkrishi_app/base.html" %}
+{% block content %}
+<h2>🔧 Available Work for Workers</h2>
+{% for post in posts %}
+  <div style="border: 1px solid #ccc; padding: 10px; margin: 10px;">
+    <p><strong>Farmer:</strong> {{ post.farmer_name }}</p>
+    <p><strong>Contact:</strong> {{ post.contact_number }}</p>
+    <p><strong>Village:</strong> {{ post.village }}</p>
+    <p><strong>Crop:</strong> {{ post.crop_type }}</p>
+    <p><strong>Description:</strong> {{ post.work_description }}</p>
+    <p><em>Posted on: {{ post.date_posted|date:"F j, Y, g:i a" }}</em></p>
+  </div>
+{% empty %}
+  <p>No work available at the moment.</p>
+{% endfor %}
+{% endblock %}

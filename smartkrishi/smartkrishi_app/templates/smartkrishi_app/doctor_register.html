@@ -1,0 +1,25 @@
+{% extends 'smartkrishi_app/base.html' %}
+{% block title %}👨‍⚕️ Register as Crop Doctor{% endblock %}
+
+{% block content %}
+  <h2>👨‍⚕️ Register as Crop Doctor</h2>
+
+  <form method="post">
+    {% csrf_token %}
+
+    <fieldset>
+      <legend>Login Information</legend>
+      {{ user_form.as_p }}
+    </fieldset>
+
+    <fieldset>
+      <legend>Doctor Profile</legend>
+      {{ profile_form.name.label_tag }} {{ profile_form.name }}
+      {{ profile_form.available_time.label_tag }} {{ profile_form.available_time }}
+      {{ profile_form.video_link.label_tag }} {{ profile_form.video_link }}
+      {{ profile_form.specialization_input.label_tag }} {{ profile_form.specialization_input }}
+    </fieldset>
+
+    <button type="submit">Register</button>
+  </form>
+{% endblock %}

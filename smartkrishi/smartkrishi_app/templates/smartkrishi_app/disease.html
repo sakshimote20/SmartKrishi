@@ -12,7 +12,7 @@
     <button type="submit">Predict Disease</button>
   </form>
 
-  <div id="result"></div>
+  <div id="result" style="margin-top: 20px;"></div>
 
   <script>
     document.getElementById("predict-form").addEventListener("submit", async function (e) {
@@ -44,12 +44,22 @@
         if (data.error) {
           resultDiv.innerHTML = `<p style="color:red;">${data.error}</p>`;
         } else {
-          resultDiv.innerHTML = `
-            <p><strong>Predicted Disease:</strong> ${data.disease}</p>
-            <p><strong>Confidence:</strong> ${data.confidence}</p>
-            <p><strong>Chemical Treatment:</strong> ${data.chemical_treatment}</p>
-            <p><strong>Biological Treatment:</strong> ${data.biological_treatment}</p>
-          `;
+          const confidenceValue = parseFloat(data.confidence);
+
+          if (confidenceValue < 30) {
+            resultDiv.innerHTML = `
+              <p><strong>Predicted Disease:</strong> ${data.disease}</p>
+              <p><strong>Confidence:</strong> ${data.confidence}</p>
+              <p style="color:orange;"><em>I'm not very confident about this prediction. Please consult an agricultural expert or upload a clearer image.</em></p>
+            `;
+          } else {
+            resultDiv.innerHTML = `
+              <p><strong>Predicted Disease:</strong> ${data.disease}</p>
+              <p><strong>Confidence:</strong> ${data.confidence}</p>
+              <p><strong>Chemical Treatment:</strong> ${data.chemical_treatment}</p>
+              <p><strong>Biological Treatment:</strong> ${data.biological_treatment}</p>
+            `;
+          }
         }
       } catch (err) {
         resultDiv.innerHTML = `<p style="color:red;">Error: ${err}</p>`;

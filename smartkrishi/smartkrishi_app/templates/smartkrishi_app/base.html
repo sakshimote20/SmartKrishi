@@ -9,19 +9,42 @@
 <body>
 
   <!-- Header -->
-  <header>🌿 SmartKrishi- AI-Based Crop Doctor & Farmer Advisor </header>
+  <header>
+    🌿 <strong>SmartKrishi</strong> – AI-Based Crop Doctor & Farmer Advisor
+  </header>
 
-  <!-- Navigation Bar with dynamic URLs -->
+  <!-- Navigation Bar -->
   <nav>
     <a href="{% url 'home' %}">Home</a>
     <a href="{% url 'disease' %}">Disease Prediction</a>
     <a href="{% url 'weather' %}">Weather Forecast</a>
+    <a href="{% url 'call-doctor' %}">Call a Crop Doctor</a>
+    <a href="{% url 'create-work-post' %}">Post Work (Farmer)</a>
+    <a href="{% url 'view-work-posts' %}">Find Work (Worker)</a>
+
+    <!-- Doctor Links Based on Auth -->
+    {% if user.is_authenticated %}
+      <a href="{% url 'doctor-dashboard' %}">My Dashboard</a>
+      <a href="{% url 'doctor-logout' %}">Logout</a>
+    {% else %}
+      <span style="margin-left: 20px;">| For Doctors:</span>
+      <a href="{% url 'doctor-login' %}">Login</a>
+      <a href="{% url 'doctor-register' %}">Register</a>
+    {% endif %}
   </nav>
 
-  <!-- Page Content Block -->
+  <!-- Flash Messages -->
+  {% if messages %}
+    <div class="messages">
+      {% for message in messages %}
+        <p style="color: green;">{{ message }}</p>
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  <!-- Page Content -->
   <div class="container">
-    {% block content %}
-    {% endblock %}
+    {% block content %}{% endblock %}
   </div>
 
 </body>

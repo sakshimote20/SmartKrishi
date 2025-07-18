@@ -1,0 +1,9 @@
+{% extends "smartkrishi_app/base.html" %}
+{% block content %}
+<h2>👨‍🌾 Post Work (Farmer)</h2>
+<form method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">Post Work</button>
+</form>
+{% endblock %}
